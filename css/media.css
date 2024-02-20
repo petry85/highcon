@@ -21,6 +21,10 @@
         justify-content: center;
         width: 100%;
     }
+    header img {
+        align-items: center;
+        margin: 0 auto 0 auto;
+    }
     menu {
         display: none;
     }
@@ -35,6 +39,7 @@
     menu>ul {
         display: flex;
         flex-direction: column;
+        margin: 0 auto 0 auto;
         list-style-type: none;
         justify-content: center;
     }
