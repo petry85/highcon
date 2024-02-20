@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HighCon</title>
+    <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+
     <link rel="shortcut icon" href="medias/img/highconverde2.jpg" type="image/jpeg">
     <!--Fonte Opens Sans-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,25 +19,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    <!--Icone Menu-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <nav>
-            <img src="medias/img/logoverde.jpg" alt="Logo HighCon">
-            <a href="https://api.whatsapp.com/send?phone=5547991323311">Contato</a>
-            <a href="#">Serviços</a>
-            <a href="#">Quem somos</a>
-        </nav>
+        <img src="medias/img/logoverde.jpg" alt="Logo HighCon">
+        <i id="menu_burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="menu_itens">
+            <ul>
+                <li><a href="https://api.whatsapp.com/send?phone=5547999056440">Contato</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Quem somos</a></li>
+            </ul>
+        </menu>
     </header>
     <main>
-        <div class="parag">
+        <div class="parag" id="parag1">
             <p>Em breve um novo conceito de Gestão de Tráfego e Landing Pages....</p>
         </div>
         <div id="div_apresentacao">
-            <img src="medias/img/logo_reduzido.png" alt="">
+            <img id="logo_principal" src="medias/img/logo_reduzido.png" alt="logo HighCon">
         </div>
-        <div class="parag">
+        <div class="parag" id="aguarde">
             <p>Aguarde...</p>
         </div>
         <audio controls autoplay id="myaudio">
@@ -44,8 +52,26 @@
     </main>
     <!--Volume do audio-->
     <script>
+        //-Volume audio
         var audio = document.getElementById("myaudio");
         audio.volume = 0.2;
+
+        //mudança de tamanho
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menu_itens.style.display = 'block'
+            } else {
+                menu_itens.style.display = 'none'
+            }
+        }
+        //Menu burguer
+        function clickMenu() {
+            if (menu_itens.style.display == 'block') {
+                menu_itens.style.display = 'none'
+            } else {
+                menu_itens.style.display = 'block'
+            }
+        }
     </script>
 </body>
 

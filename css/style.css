@@ -17,8 +17,16 @@ body {
     align-items: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
 audio {
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     width: 0px;
@@ -26,19 +34,15 @@ audio {
 
 header {
     display: flex;
-    align-items: center;
-    max-height: 120px;
-    overflow: hidden;
-}
-
-nav {
     background-color: var(--cor2);
+    align-items: center;
     width: 100%;
-    padding-right: 25px;
+    overflow: hidden;
 }
 
 header img {
     display: block;
+    background-color: var(--cor2);
     float: left;
     margin-left: 25px;
     width: 150px;
@@ -46,43 +50,75 @@ header img {
     text-align: right;
 }
 
-nav a {
-    display: block;
-    float: right;
-    text-decoration: none;
-    font-size: 6em;
+menu {
+    display: flex;
     background-color: var(--cor2);
-    color: #cac9c7;
-    margin-top: 70px;
-    margin-bottom: 3px;
-    padding: 5px;
+    width: 100%;
 }
 
-nav a:hover {
+menu>ul>li {
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--cor2);
+    font-size: 3rem;
+    padding: 10px;
+}
+
+menu ul {
+    display: flex;
+    background-color: var(--cor2);
+    text-align: center;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+menu a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+menu a:hover {
+    background-color: var(--cor3);
+    text-align: center;
+    justify-content: center;
+    color: var(--cor2);
+    padding: 10px;
+    border-radius: 25px;
+    transition: .8s;
+}
+
+i#menu_burguer {
+    display: none;
+}
+
+#menu_burguer a:hover {
     background-color: var(--cor3);
     color: var(--cor2);
     border-radius: 20px;
     transition: .7s;
 }
 
-main {
-    width: 90vw;
-    align-items: center;
-    justify-content: center;
-}
-
 #div_apresentacao {
     /*background-image: url('../medias/img/logo_reduzido.png');*/
-    justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 50px;
-    margin-left: 300px;
+    margin-left: auto;
     margin-right: auto;
-    width: 90%;
     height: 250px;
     animation: square-in-center 6s infinite;
     padding: 15px;
+}
+
+#div_apresentacao img {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes square-in-center {
