@@ -161,3 +161,22 @@ p {
     white-space: nowrap;
     overflow: hidden;
 }
+
+
+/* SERVIÇOS */
+
+#container {
+    display: flex;
+}
+
+.card_service {
+    width: 200px;
+    height: 400px;
+    margin: 0 10px 0 10px;
+    border-radius: 15px;
+    /*border: 1px solid var(--cor2);*/
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 1px 2px var(--cor2);
+}
