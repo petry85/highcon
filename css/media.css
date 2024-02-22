@@ -108,7 +108,7 @@
     .card_service {
         width: 80%;
         height: 400px;
-        margin: 0 auto 0 auto;
+        margin: 15px auto 0 auto;
         border: 1px solid black;
         border-radius: 15px;
         /*border: 1px solid var(--cor2);*/
