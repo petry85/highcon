@@ -17,14 +17,17 @@
 body {
     justify-content: center;
     align-items: center;
+    margin: 0 auto 0 auto;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    max-width: 1200px;
     align-items: center;
     justify-content: center;
+    margin: 1px auto 0 auto;
+    border: 1px solid 2px var(--cor3);
 }
 
 audio {
@@ -53,7 +56,7 @@ header img {
 }
 
 menu {
-    display: flex;
+    display: block;
     background-color: var(--cor2);
     width: 100%;
 }
@@ -104,20 +107,37 @@ i#menu_burguer {
     transition: .7s;
 }
 
+hr {
+    color: var(--cor3);
+    background-color: #61ac29;
+    width: 100%;
+    height: 1px;
+    box-shadow: 1px 1px var(--cor3);
+}
+
 #div_apresentacao {
     /*background-image: url('../medias/img/logo_reduzido.png');*/
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 50px auto 0 auto;
-    height: 250px;
+    /*margin: 50px auto 0 auto;*/
+    height: 200px;
+    /*tamanho anterior: 200px*/
     animation: square-in-center 6s infinite;
     padding: 15px;
 }
 
 #div_apresentacao img {
     display: flex;
-    align-items: center;
-    margin: 0 auto 0 auto;
+    align-items: flex-start;
+    width: 100px;
+}
+
+#logo_principal {
+    align-items: flex-start;
+}
+
+.imagens_inicio {
+    width: 800px;
 }
 
 @keyframes square-in-center {
