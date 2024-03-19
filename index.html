@@ -7,9 +7,10 @@
     <title>HighCon</title>
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <!-- JS -->
-    <script type="text/javascript" src="js/script.js"></script>
+    <!--<link rel="stylesheet" href="css/media_.css">-->
+    <!--Animação-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Favicon-->
     <link rel="shortcut icon" href="medias/img/highconverde2.jpg" type="image/jpeg">
     <!--Fonte Opens Sans-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,41 +26,113 @@
 
 </head>
 
-<body onresize="mudouTamanho()">
-    <header>
-        <img src="medias/img/logoverde.jpg" alt="Logo HighCon">
-        <i id="menu_burguer" class="material-icons" onclick="clickMenu()">menu</i>
-        <menu id="menu_itens">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Quem Somos</a></li>
-                <li><a href="src/servicos.html">Serviços</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="https://wa.link/0381f5">Contato</a></li>
-            </ul>
-        </menu>
-    </header>
-    <hr>
+<body>
     <main>
-        <div class="parag" id="parag1">
-            <p>Em breve um novo conceito de Gestão de Tráfego e Landing Pages....</p>
+        <div class="container" id="highcon">
+            <div id="logo_high">
+                <img src="medias/img/logo_sem_fundo.png" alt="logo HighCon">
+            </div>
+            <div class="paragrafo">
+                <p>Transformando visitantes em <span>resultados.</span>
+                </p>
+            </div>
+            <div class="imagens">
+                <img src="medias/img/homem_com_notebook.png" alt="homem sentado com notebook">
+            </div>
         </div>
-        <div id="div_apresentacao">
-            <img id="logo_principal" src="medias/img/logo_sem_fundo.png" alt="logo HighCon">
+        <div class="container" id="converter">
+            <div class="paragrafo" class="on-screen">
+                <h1 id="title_converter" data-aos="fade-left">Converter.</h1>
+                <p data-aos="fade-up">Uma landing page eficaz é<br>capaz de converter<br>instantaneamente os<br><span class="bold_verde">visitantes</span> em <span class="bold_verde">potenciais<br>clientes.</span></p>
+            </div>
+            <div class="imagens">
+                <img src="medias/img/notebook.png" alt="notebook aberto">
+            </div>
         </div>
-        <div class="parag" id="aguarde">
-            <p>Aguarde...</p>
+        <hr id="hr_imersao">
+        <div class="container" id="imersao">
+            <div class="paragrafo" class="on-screen">
+                <h1 data-aos="fade-down">Imersão &<br>Responsividade.</h1>
+                <p data-aos="fade-left">Um <span class="bold_verde">layout atrativo</span> e um <span class="bold_verde">copy<br>persuasivo</span> são essenciais para cativar<br>seus prospects.</p>
+                <p data-aos="fade-right">Além disso, um site <span class="bold_verde">otimizado </span>é crucial<br>para proporcionar a<span class="bold_verde"> melhor<br>experiência ao usuário</span> e impulsionar<br>os resultados <span class="bold_verde">na gestão de tráfego</span>.</p>
+            </div>
+            <div class="imagens">
+                <img src="medias/img/celular_verde740x900.png" alt="">
+            </div>
         </div>
-        <audio controls autoplay id="myaudio">
-            <source src="medias/music/High Voltage - Linkin Park (128kbit_AAC).m4a" type="audio/mpeg">
-        </audio>
+        <hr id="hr_imersao">
+        <div class="container" id="landing">
+            <div class="imagens">
+                <img src="medias/img/notebook_semfundo.png" alt="notebook aberto">
+            </div>
+            <div class="paragrafo">
+                <h1>LANDING PAGES E SITES</h1>
+                <p>Na HighCon,<br>nossos sites e landing pages são<br> projetados para converter.</p>
+                <p>Com estética cativante e chamadas à<br>ação irresistíveis, garantimos uma jornada<br>do visitante que resulta em conversões<br>tangíveis.</p>
+                <div class="destaque">
+                    <p class="destaque_verde">Transforme cliques em clientes e<br>impulsione seu sucesso conosco.</p>
+                </div>
+            </div>
+
         </div>
+        <div class="container" id="gestao">
+            <div class="imagens">
+                <img src="medias/img/celular740x900.png" alt="notebook aberto">
+            </div>
+            <div class="paragrafo" class="on-screen">
+                <h1>GESTÃO DE TRÁFETO</h1>
+                <p>A gestão de tráfego com um site/<br>landing page eficaz é vital para<br>impulsionar as vendas.</p>
+                <p>Direcionando tráfego qualificado para uma<br>presença online bem elaborada, aumentamos<br>visibilidade e a chance de conversão.</p>
+                <div class="destaque">
+                    <p class="destaque_verde">Essa combinação estratégica impulsiona a geração de leads, otimizando a eficiência na transformação de visitantes em clientes.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container" id="final">
+            <div class="imagens">
+                <div class="perfil" class="anderson">
+                    <img src="medias/fotos/foto_petry.JPEG" alt="Foto Sócio Anderson Petry" class="imagem" data-aos="fade-right">
+
+                    <p class="anderson" data-aos="fade-left">Sou <span class="bold_white">Anderson</span> (mais solicitado com Petry), um entusiasta de tecnologia, minha responsabilidade é garantir que seu site seja responsivo e otimizado para <span class="bold_white">SEO</span>, alinhado à
+                        sua estratégia. Nosso objetivo é aumentar sua visibilidade, buscando a maior taxa de sucesso possível. Estou comprometido em oferecer soluções tecnológicas que impulsionem sua presença digital e aprimorem sua performance na web.
+                    </p>
+                </div>
+                <div class="perfil" class="gustavo">
+
+                    <p class="gustavo" data-aos="fade-right">Olá, sou <span class="bold_white">Gustavo</span>, diretor de Marketing da HighCon! Como ele não mandou nada, vai ficar assim por enquanto! rsrs</p>
+                    <img src="medias/fotos/gustavo.jpg" alt="Foto sócio Gustavo Schoreder" class="imagem" data-aos="fade-left">
+                </div>
+                <div class="perfil" class="joelson">
+                    <img src="medias/fotos/joelson.jpg" alt="Foto sócio Joelson Machado" class="imagem" data-aos="fade-right">
+                    <p class="joelson" data-aos="fade-left">Sou <span class=" bold_white ">Joelson</span>, diretor comercial da Highcon. Com mais de 10 anos de experiência em vendas, meu trabalho é ajudar empresas a ganhar visibilidade na internet e aumentar seus lucros. Meu foco é fazer com
+                        que nossos clientes conquistem seu espaço online, chegando a mais pessoas com menos esforço.</p>
+                </div>
+            </div>
+            <!--<div id="descricao ">
+                <p class="anderson ">Sou <span class="bold_white ">Anderson</span> (mais solicitado com Petry), um entusiasta de tecnologia, e na equipe da HighCon, minha responsabilidade é garantir que seu site seja responsivo e otimizado para SEO, alinhado à estratégia do
+                    cliente. Nosso objetivo é aumentar sua visibilidade online, buscando a maior taxa de sucesso possível. Estou comprometido em oferecer soluções tecnológicas que impulsionem sua presença digital e aprimorem sua performance na web.</p>
+
+                <p class="joelson ">Sou <span class="bold_white ">Joelson</span>, diretor comercial da Highcon. Com mais de 10 anos de experiência em vendas, meu trabalho é ajudar empresas a ganhar visibilidade na internet e aumentar seus lucros. Meu foco é fazer com que
+                    nossos clientes conquistem seu espaço online, chegando a mais pessoas com menos esforço.</p>
+
+            </div>-->
+
+        </div>
+
     </main>
     <footer>
-        <p id="rodape">Site desenvolvido por HighCon</p>
+        <p id="rodape ">Site desenvolvido por HighCon</p>
     </footer>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
 </body>
+<script src="script.js "></script>
+
+</html>
 
 </html>
