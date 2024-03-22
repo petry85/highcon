@@ -6,12 +6,13 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-size: 62.5%;
+    font-size: 1em;
     font-family: var(--font3);
 }
 
 :root {
     --cor1: #cac9c7;
+    --cor1t: #cac9c776;
     --cor2: #333436;
     --cor3: #61ac29;
     --cor4: #A9ABAA;
@@ -20,351 +21,307 @@
     --font3: "Pretendard", "Roboto", sans-serif;
 }
 
-body {
-    background-color: var(--cor1);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    max-width: 80%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: 1px auto 0 auto;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-}
-
-.paragrafo,
-.imagens {
-    display: flex;
-    width: 50%;
-}
-
-img {
-    width: 50%;
-    height: 50%;
-    z-index: 1;
-}
-
-#highcon {
-    background-image: url('../medias/img/fundo_off_white.png');
-    flex-wrap: wrap;
-    position: relative;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-#highcon #logo_high {
-    display: block;
-    margin: 10% auto 0 10%;
-    scale: 1.2;
-    transition-duration: 0.8s;
-    transform-origin: 0% 0%;
-}
-
-#logo_high:hover {
-    transform: scale(1.5);
-    transition-duration: 0.8s;
-}
-
-#highcon p {
-    margin-left: 22%;
-    font-size: 1.5rem;
-}
-
-#highcon .imagens img {
-    display: flex;
-    position: relative;
-    margin-top: -20%;
-    float: right;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-#highcon span {
-    font-size: 2rem;
-    padding: 2px;
-    margin-top: 2px;
-}
-
-@keyframes square-in-hesitate {
-    0% {
-        clip-path: inset(100% 100% 100% 100%);
+@media screen and (min-width:769px) {
+    body {
+        background-color: var(--cor1);
     }
-    40% {
-        clip-path: inset(33% 33% 33% 33%);
+    main {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 1px auto 0 auto;
     }
-    100% {
-        clip-path: inset(0 0 0 0);
+    .container {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
     }
-}
-
-[transition-style="in:square:hesitate"] {
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-hesitate both;
-}
-
-#highcon span {
-    background-color: var(--cor3);
-    border-radius: 0 5px 0 5px;
-    animation: square-in-hesitate 3s;
-}
-
-#converter .imagens,
-#imersao .imagens {
-    margin-top: 15%;
-    width: 40vw;
-}
-
-#converter .imagens img {
-    width: 30vw;
-    height: 50vh;
-}
-
-#converter .paragrafo,
-#imersao .paragrafo {
-    margin-top: 15%;
-    position: relative;
-    float: right;
-    text-align: right;
-}
-
-#converter .paragrafo,
-#imersao .paragrafo {
-    display: block;
-    margin: 15% 3% 0 0;
-    position: relative;
-    float: right;
-    text-align: right;
-}
-
-#imersao .paragrafo h1 {
-    font-size: 3rem;
-    color: var(--cor3);
-    transition: all 3s linear;
-}
-
-#converter .paragrafo h1 {
-    font-size: 3rem;
-    color: var(--cor3);
-    transition: all 3s linear;
-}
-
-.hidden {
-    opacity: 0;
-    font-size: 1rem;
-    filter: blur(15px);
-    transition: all 2s;
-}
-
-
-/* Adicione esta classe ao elemento quando estiver visível */
-
-#converter .paragrafo p,
-#imersao .paragrafo p {
-    font-size: 1rem;
-    margin-top: 5%;
-    transition: all 3s linear;
-}
-
-.bold_verde {
-    font-size: 1.2rem;
-    color: var(--cor3);
-    font-weight: bolder;
-}
-
-#converter {
-    display: flex;
-    background-image: url('../medias/img/hihihihihih.png');
-    background-color: var(--cor2);
-    position: relative;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    width: 100%;
-    color: var(--cor1);
-}
-
-#imersao {
-    display: flex;
-    background-image: url('../medias/img/hihihihihih.png');
-    background-color: var(--cor2);
-    position: relative;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    width: 100%;
-    color: var(--cor1);
-}
-
-#imersao .imagens img {
-    margin-top: -10%;
-    padding: 0;
-    width: 30vw;
-    height: 85vh;
-}
-
-#landing {
-    display: flex;
-    background-image: url('../medias/img/hihihihihih.png');
-    background-color: var(--cor2);
-    position: relative;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    width: 100%;
-}
-
-#landing .imagens img {
-    margin: 35% 0 0 20%;
-    width: 70vw;
-    height: 80vh;
-}
-
-#gestao {
-    display: flex;
-    background-image: url('../medias/img/hihihihihih.png');
-    background-color: var(--cor1);
-    position: relative;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-}
-
-#gestao .imagens img {
-    margin: 0% 2.5% 0 8.1%;
-    width: 70vw;
-    height: 100vh;
-}
-
-#gestao .paragrafo,
-#landing .paragrafo {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #62ac2986;
-    border-radius: 25px;
-    color: white;
-    overflow: hidden;
-    margin: 5% 10% 0 0;
-    height: 75vh;
-}
-
-#gestao h1,
-#landing h1 {
-    background-color: var(--cor3);
-    border-radius: 23px 23px 0 0;
-    margin: 0px;
-    padding: 10px 20px;
-    overflow: hidden;
-    width: 95%;
-    font-size: 1.2rem;
-}
-
-#gestao p,
-#landing p {
-    margin: 3%;
-    font-size: 1rem;
-}
-
-#gestao .paragrafo {
-    background-color: var(--cor4);
-}
-
-.destaque {
-    display: flex;
-    margin-left: 20px;
-}
-
-.destaque_verde {
-    background-color: #61ac29;
-    border-radius: 20px;
-    padding: 10px;
-    width: 70%;
-}
-
-#final {
-    display: block;
-    background-image: url('../medias/img/hihihihihih.png');
-    background-color: var(--cor3);
-    position: relative;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    width: 100%;
-    height: 70vw;
-}
-
-#final p {
-    margin: 5px;
-    width: 60%;
-    height: 70px;
-    text-align: justify;
-    align-items: center;
-    color: var(--cor2);
-    border: 1px solid var(--cor2);
-    border-radius: 10px;
-    padding: 6px;
-    background-color: #a9abaa4e;
-    font-size: .8rem;
-    box-shadow: 1px 1px 3px var(--cor2);
-}
-
-#final .imagens {
-    display: block;
-    justify-content: space-between;
-    margin-top: 10%;
-    margin-left: 5%;
-    width: 70vw;
-    transition: all 3s linear;
-}
-
-#final .bold_white {
-    font-size: .9rem;
-    color: var(--cor1);
-}
-
-#final .imagens .imagem:hover {
-    transform: scale(1.5);
-    margin: 25px;
-}
-
-.perfil {
-    display: flex;
-    align-items: center;
-    margin: 10%;
-}
-
-.imagens .perfil img {
-    background-color: black;
-    border: var(--cor1);
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    text-align: center;
-    color: var(--cor1);
-    justify-content: center;
-    box-shadow: 1px 2px 4px var(--cor2);
-}
-
-
-/* Exibir o parágrafo correspondente quando a imagem é clicada */
-
-footer {
-    background-color: var(--cor2);
-    width: 100vw;
-    color: var(--cor1);
-    font-size: 1.5rem;
-    padding: 2px;
-    text-align: center;
+    .paragrafo,
+    .imagens {
+        display: flex;
+        width: 50%;
+    }
+    img {
+        width: 50%;
+        height: 50%;
+        z-index: 1;
+    }
+    #highcon {
+        background-image: url('../medias/img/fundo_off_white.png');
+        flex-wrap: wrap;
+        position: relative;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    #highcon #logo_high {
+        display: block;
+        margin: 10% auto 0 10%;
+        scale: 1.2;
+        transition-duration: 0.8s;
+        transform-origin: 0% 0%;
+    }
+    #logo_high:hover {
+        transform: scale(1.5);
+        transition-duration: 0.8s;
+    }
+    #highcon p {
+        margin-left: 22%;
+        font-size: 1.5rem;
+    }
+    #highcon .imagens img {
+        display: flex;
+        position: relative;
+        margin-top: -20%;
+        float: right;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    #highcon span {
+        font-size: 2rem;
+        padding: 2px;
+        margin-top: 2px;
+    }
+    @keyframes square-in-hesitate {
+        0% {
+            clip-path: inset(100% 100% 100% 100%);
+        }
+        40% {
+            clip-path: inset(33% 33% 33% 33%);
+        }
+        100% {
+            clip-path: inset(0 0 0 0);
+        }
+    }
+    [transition-style="in:square:hesitate"] {
+        animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-hesitate both;
+    }
+    #highcon span {
+        background-color: var(--cor3);
+        border-radius: 0 5px 0 5px;
+        animation: square-in-hesitate 3s;
+    }
+    #converter .imagens,
+    #imersao .imagens {
+        margin-top: 15%;
+        width: 40vw;
+    }
+    #converter .imagens img {
+        width: 30vw;
+        height: 50vh;
+    }
+    #converter .paragrafo,
+    #imersao .paragrafo {
+        margin-top: 15%;
+        position: relative;
+        float: right;
+        text-align: right;
+    }
+    #converter .paragrafo,
+    #imersao .paragrafo {
+        display: block;
+        margin: 15% 3% 0 0;
+        position: relative;
+        float: right;
+        text-align: right;
+    }
+    #imersao .paragrafo h1 {
+        font-size: 3rem;
+        color: var(--cor3);
+        transition: all 3s linear;
+    }
+    #converter .paragrafo h1 {
+        font-size: 3rem;
+        color: var(--cor3);
+        transition: all 3s linear;
+    }
+    .hidden {
+        opacity: 0;
+        font-size: 1rem;
+        filter: blur(15px);
+        transition: all 2s;
+    }
+    /* Adicione esta classe ao elemento quando estiver visível */
+    #converter .paragrafo p,
+    #imersao .paragrafo p {
+        font-size: 1rem;
+        margin-top: 5%;
+        transition: all 3s linear;
+    }
+    .bold_verde {
+        font-size: 1.2rem;
+        color: var(--cor3);
+        font-weight: bolder;
+    }
+    #converter {
+        display: flex;
+        background-image: url('../medias/img/hihihihihih.png');
+        background-color: var(--cor2);
+        position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        width: 100%;
+        color: var(--cor1);
+    }
+    #imersao {
+        display: flex;
+        background-image: url('../medias/img/hihihihihih.png');
+        background-color: var(--cor2);
+        position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        width: 100%;
+        color: var(--cor1);
+    }
+    #imersao .imagens img {
+        margin-top: -10%;
+        padding: 0;
+        width: 30vw;
+        height: 85vh;
+    }
+    #landing {
+        display: flex;
+        background-image: url('../medias/img/hihihihihih.png');
+        background-color: var(--cor2);
+        position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        width: 100%;
+    }
+    #landing .imagens img {
+        margin: 35% 0 0 20%;
+        width: 70vw;
+        height: 80vh;
+    }
+    #gestao {
+        display: flex;
+        background-image: url('../medias/img/hihihihihih.png');
+        background-color: var(--cor1);
+        position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+    }
+    #gestao .imagens img {
+        margin: 0% 2.5% 0 8.1%;
+        width: 70vw;
+        height: 100vh;
+    }
+    #gestao .paragrafo,
+    #landing .paragrafo {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #62ac2986;
+        border-radius: 25px;
+        color: white;
+        overflow: hidden;
+        margin: 5% 10% 0 0;
+        height: 75vh;
+    }
+    #gestao h1,
+    #landing h1 {
+        background-color: var(--cor3);
+        border-radius: 23px 23px 0 0;
+        margin: 0px;
+        padding: 10px 20px;
+        overflow: hidden;
+        width: 95%;
+        font-size: 1.2rem;
+    }
+    #gestao p,
+    #landing p {
+        margin: 3%;
+        font-size: 1rem;
+    }
+    #gestao .paragrafo {
+        background-color: var(--cor4);
+    }
+    .destaque {
+        display: flex;
+        margin-left: 20px;
+    }
+    .destaque_verde {
+        background-color: #61ac29;
+        border-radius: 20px;
+        padding: 10px;
+        width: 70%;
+        text-align: center;
+    }
+    #final {
+        display: block;
+        background-image: url('../medias/img/hihihihihih.png');
+        background-color: var(--cor3);
+        position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        width: 100%;
+        height: 70vw;
+    }
+    #final p {
+        margin: 5px;
+        width: 60%;
+        height: 70px;
+        text-align: justify;
+        align-items: center;
+        color: var(--cor2);
+        border: 1px solid var(--cor2);
+        border-radius: 10px;
+        padding: 6px;
+        background-color: #a9abaa4e;
+        font-size: .8rem;
+        box-shadow: 1px 1px 3px var(--cor2);
+    }
+    #final .imagens {
+        display: block;
+        justify-content: space-between;
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 70vw;
+        transition: all 3s linear;
+    }
+    #final .bold_white {
+        font-size: .9rem;
+        color: var(--cor1);
+    }
+    #final .imagens .imagem:hover {
+        transform: scale(1.5);
+        margin: 25px;
+    }
+    .perfil {
+        display: flex;
+        align-items: center;
+        margin: 10%;
+    }
+    .imagens .perfil img {
+        background-color: black;
+        border: var(--cor1);
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        text-align: center;
+        color: var(--cor1);
+        justify-content: center;
+        box-shadow: 1px 2px 4px var(--cor2);
+    }
+    /* Exibir o parágrafo correspondente quando a imagem é clicada */
+    footer {
+        background-color: var(--cor2);
+        width: 100vw;
+        color: var(--cor1);
+        font-size: 1.5rem;
+        padding: 2px;
+        text-align: center;
+    }
 }
