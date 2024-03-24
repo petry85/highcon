@@ -285,6 +285,7 @@
     }
     #contato a {
         text-decoration: none;
+        padding: 20px;
     }
     /*icone mesangem*/
     .material-symbols-outlined {
