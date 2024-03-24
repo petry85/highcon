@@ -265,16 +265,68 @@
         border-radius: 50px;
         box-shadow: 2px 5px 5px var(--cor2);
     }
-    footer div {
+    #contato {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--cor1);
+        padding: 30px;
+        width: 92%;
         overflow: hidden;
+    }
+    #contato h1 {
+        display: block;
+        font-size: 1.5em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 25px;
+    }
+    #contato a {
+        text-decoration: none;
+    }
+    /*icone mesangem*/
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        font-size: 50px;
+    }
+    #icone_whats {
+        display: block;
+        background-color: var(--cor3t);
+        color: var(--cor2);
+        font-size: 75px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border: 1px solid var(--cor3);
+        border-radius: 50%;
+        box-shadow: 3px 3px 2px var(--cor2t);
+    }
+    #icone_email {
+        display: block;
+        color: var(--cor2);
+        font-size: 75px;
+        margin-left: 40px;
+        margin-right: auto;
+        width: fit-content;
     }
     footer {
         background-color: var(--cor2);
         color: var(--cor1);
-        font-size: 1.6rem;
+        font-size: 1.8em;
         padding: 5px;
         text-align: center;
-        width: 99%;
+        overflow: hidden;
+        width: fit-content;
+    }
+    footer div {
+        overflow: hidden;
+    }
+    footer p {
+        background-color: var(--cor2);
+        color: var(--cor1);
+        font-size: 1.5em;
+        width: 99vw;
     }
 }
 
