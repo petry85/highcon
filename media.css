@@ -70,7 +70,7 @@
         background-color: var(--cor1t);
         padding-top: 20px;
         padding-bottom: 20px;
-        font-size: 3.5em;
+        font-size: 3em;
         color: var(--cor3);
         transition: all 3s ease;
         box-shadow: 0px 10px 10px var(--cor1t);
@@ -91,7 +91,7 @@
         margin: 10px auto 0 auto;
         padding-top: 20px;
         padding-bottom: 50px;
-        width: 400px;
+        width: 350px;
         height: 300px;
     }
     #imersao {
@@ -100,12 +100,11 @@
         background-image: url(../medias/img/hihihihihih.png);
         background-attachment: fixed;
         background-color: var(--cor2);
-        width: 100%;
     }
     #imersao h1 {
         color: var(--cor3);
         background-color: var(--cor1t);
-        font-size: 3.5em;
+        font-size: 2.5em;
         text-align: center;
         padding-top: 25px;
         padding-bottom: 20px;
@@ -120,7 +119,7 @@
     #imersao #celular_verde {
         display: flex;
         justify-content: flex-end;
-        margin-left: 50%;
+        margin-left: 40%;
         width: 300px;
     }
     #landing {
@@ -129,13 +128,13 @@
         background-image: url(../medias/img/hihihihihih.png);
         background-attachment: fixed;
         background-color: var(--cor1);
-        width: 100%;
     }
     #landing h1 {
         color: var(--cor1);
         background-color: var(--cor3);
-        font-size: 3.5em;
+        font-size: 2.5em;
         text-align: center;
+        padding-top: 20px;
         padding-bottom: 20px;
         box-shadow: 0px 10px 10px var(--cor2t);
     }
@@ -178,7 +177,6 @@
         background-image: url(../medias/img/hihihihihih.png);
         background-attachment: fixed;
         background-color: var(--cor2);
-        width: 100%;
     }
     #gestao .paragrafo {
         padding-bottom: 20px;
@@ -187,7 +185,7 @@
     #gestao h1 {
         color: var(--cor3);
         background-color: var(--cor1t);
-        font-size: 3.5em;
+        font-size: 2.5em;
         text-align: center;
         padding-top: 25px;
         padding-bottom: 20px;
@@ -200,7 +198,7 @@
         padding-top: 20px;
         margin-left: auto;
         margin-right: auto;
-        width: 550px;
+        width: 350px;
     }
     #gestao .destaque_verde {
         background-color: var(--cor3);
@@ -224,7 +222,6 @@
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 30px;
-        width: 100%;
     }
     #equipe h1 {
         background-color: var(--cor1);
@@ -236,7 +233,7 @@
     }
     #equipe p {
         display: block;
-        background-color: var(--cor3t);
+        background-color: var(--cor1t);
         text-align: justify;
         margin-left: auto;
         margin-right: auto;
