@@ -156,7 +156,6 @@
     #landing .paragrafo {
         border: 1px solid var(--cor3);
         padding-bottom: 20px;
-        box-shadow: 0px 10px 10px var(--cor2t);
     }
     #not_landing {
         display: none;
