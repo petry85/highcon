@@ -29,6 +29,10 @@
         width: 100vw;
         align-items: center;
     }
+    main {
+        width: 100vw;
+        overflow: hidden;
+    }
     #highcon {
         background-image: url(../medias/img/fundo_off_white.png);
         background-attachment: fixed;
