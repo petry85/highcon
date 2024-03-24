@@ -40,7 +40,7 @@
         padding-left: 25px;
     }
     #logo {
-        width: 350px;
+        width: 330px;
     }
     #highcon .paragrafo p {
         padding-left: 27px;
@@ -160,7 +160,7 @@
         background-color: var(--cor3);
         justify-content: center;
         margin: 10px;
-        width: 450px;
+        width: 350px;
         margin-left: auto;
         margin-right: auto;
         padding: 15px;
@@ -204,7 +204,7 @@
         background-color: var(--cor3);
         justify-content: center;
         margin: 20px;
-        width: 450px;
+        width: 350px;
         margin-left: auto;
         margin-right: auto;
         padding: 15px;
@@ -238,7 +238,7 @@
         margin-left: auto;
         margin-right: auto;
         padding: 15px;
-        width: 400px;
+        width: 300px;
         font-size: 1em;
         border: 1px solid var(--cor1);
         border-radius: 15px;
