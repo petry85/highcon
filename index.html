@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HighCon</title>
     <!--CSS-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--<link rel="stylesheet" href="css/media_.css">-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <!--Animação-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--Favicon-->
@@ -30,41 +30,39 @@
     <main>
         <div class="container" id="highcon">
             <div id="logo_high">
-                <img src="medias/img/logo_sem_fundo.png" alt="logo HighCon">
+                <img id="logo" src="medias/img/logo_sem_fundo.png" alt="logo HighCon" data-aos="fade-in">
+
             </div>
             <div class="paragrafo">
-                <p>Transformando visitantes em <span>resultados.</span>
+                <p data-aos="fade-right">Transformando visitantes em<br> <span id="resultados" data-aos="fade-in">resultados.</span>
                 </p>
             </div>
             <div class="imagens">
-                <img src="medias/img/homem_com_notebook.png" alt="homem sentado com notebook">
+                <img id="man_notebook" src="medias/img/homem_com_notebook.png" alt="homem sentado com notebook ">
             </div>
         </div>
         <div class="container" id="converter">
-            <div class="paragrafo" class="on-screen">
+            <div class="paragrafo">
                 <h1 id="title_converter" data-aos="fade-left">Converter.</h1>
-                <p data-aos="fade-up">Uma landing page eficaz é<br>capaz de converter<br>instantaneamente os<br><span class="bold_verde">visitantes</span> em <span class="bold_verde">potenciais<br>clientes.</span></p>
+                <p data-aos="fade-up">Uma landing page eficaz é<br>capaz de converter<br>instantaneamente os<br><span class="bold_verde" data-aos="fade-right">visitantes</span> em <span class="bold_verde" data-aos="fade-left">potenciais<br>clientes.</span></p>
             </div>
             <div class="imagens">
-                <img src="medias/img/notebook.png" alt="notebook aberto">
+                <img id="note_aberto" src="medias/img/notebook.png" alt="notebook aberto">
             </div>
         </div>
         <hr id="hr_imersao">
         <div class="container" id="imersao">
-            <div class="paragrafo" class="on-screen">
+            <div class="paragrafo">
                 <h1 data-aos="fade-down">Imersão &<br>Responsividade.</h1>
                 <p data-aos="fade-left">Um <span class="bold_verde">layout atrativo</span> e um <span class="bold_verde">copy<br>persuasivo</span> são essenciais para cativar<br>seus prospects.</p>
                 <p data-aos="fade-right">Além disso, um site <span class="bold_verde">otimizado </span>é crucial<br>para proporcionar a<span class="bold_verde"> melhor<br>experiência ao usuário</span> e impulsionar<br>os resultados <span class="bold_verde">na gestão de tráfego</span>.</p>
             </div>
             <div class="imagens">
-                <img src="medias/img/celular_verde740x900.png" alt="">
+                <img id="celular_verde" data-aos="fade-left" src="medias/img/celular_verde740x900.png" alt=" ">
             </div>
         </div>
-        <hr id="hr_imersao">
+
         <div class="container" id="landing">
-            <div class="imagens">
-                <img src="medias/img/notebook_semfundo.png" alt="notebook aberto">
-            </div>
             <div class="paragrafo">
                 <h1>LANDING PAGES E SITES</h1>
                 <p>Na HighCon,<br>nossos sites e landing pages são<br> projetados para converter.</p>
@@ -73,12 +71,13 @@
                     <p class="destaque_verde">Transforme cliques em clientes e<br>impulsione seu sucesso conosco.</p>
                 </div>
             </div>
+            <div class="imagens">
+                <img id="not_landing" src="medias/img/notebook_semfundo.png" alt="notebook aberto">
+            </div>
 
         </div>
         <div class="container" id="gestao">
-            <div class="imagens">
-                <img src="medias/img/celular740x900.png" alt="notebook aberto">
-            </div>
+
             <div class="paragrafo" class="on-screen">
                 <h1>GESTÃO DE TRÁFETO</h1>
                 <p>A gestão de tráfego com um site/<br>landing page eficaz é vital para<br>impulsionar as vendas.</p>
@@ -87,10 +86,13 @@
                     <p class="destaque_verde">Essa combinação estratégica impulsiona a geração de leads, otimizando a eficiência na transformação de visitantes em clientes.</p>
                 </div>
             </div>
+            <div class="imagens">
+                <img id="mao_celular" src="medias/img/celular740x900.png" alt="notebook aberto">
+            </div>
 
         </div>
-        <div class="container" id="final">
-            <div class="imagens">
+        <div class="container" id="equipe">
+            <div class="time_high">
                 <div class="perfil" class="anderson">
                     <img src="medias/fotos/foto_petry.JPEG" alt="Foto Sócio Anderson Petry" class="imagem" data-aos="fade-right">
 
@@ -104,34 +106,26 @@
                     <img src="medias/fotos/gustavo.jpg" alt="Foto sócio Gustavo Schoreder" class="imagem" data-aos="fade-left">
                 </div>
                 <div class="perfil" class="joelson">
-                    <img src="medias/fotos/joelson.jpg" alt="Foto sócio Joelson Machado" class="imagem" data-aos="fade-right">
-                    <p class="joelson" data-aos="fade-left">Sou <span class=" bold_white ">Joelson</span>, diretor comercial da Highcon. Com mais de 10 anos de experiência em vendas, meu trabalho é ajudar empresas a ganhar visibilidade na internet e aumentar seus lucros. Meu foco é fazer com
+                    <img src="medias/fotos/joelson.jpg" alt="Foto sócio Joelson Machado" class="imagem " data-aos="fade-right">
+                    <p class="joelson" data-aos="fade-left">Sou <span class=" bold_white">Joelson</span>, diretor comercial da Highcon. Com mais de 10 anos de experiência em vendas, meu trabalho é ajudar empresas a ganhar visibilidade na internet e aumentar seus lucros. Meu foco é fazer com
                         que nossos clientes conquistem seu espaço online, chegando a mais pessoas com menos esforço.</p>
                 </div>
             </div>
-            <!--<div id="descricao ">
-                <p class="anderson ">Sou <span class="bold_white ">Anderson</span> (mais solicitado com Petry), um entusiasta de tecnologia, e na equipe da HighCon, minha responsabilidade é garantir que seu site seja responsivo e otimizado para SEO, alinhado à estratégia do
-                    cliente. Nosso objetivo é aumentar sua visibilidade online, buscando a maior taxa de sucesso possível. Estou comprometido em oferecer soluções tecnológicas que impulsionem sua presença digital e aprimorem sua performance na web.</p>
-
-                <p class="joelson ">Sou <span class="bold_white ">Joelson</span>, diretor comercial da Highcon. Com mais de 10 anos de experiência em vendas, meu trabalho é ajudar empresas a ganhar visibilidade na internet e aumentar seus lucros. Meu foco é fazer com que
-                    nossos clientes conquistem seu espaço online, chegando a mais pessoas com menos esforço.</p>
-
-            </div>-->
 
         </div>
 
     </main>
     <footer>
-        <p id="rodape ">Site desenvolvido por HighCon</p>
+        <p id="rodape">Site desenvolvido por HighCon</p>
     </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 1000,
+            duration: 2000,
         });
     </script>
 </body>
-<script src="script.js "></script>
+
 
 </html>
 
