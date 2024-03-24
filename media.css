@@ -33,11 +33,15 @@
         background-image: url(../medias/img/fundo_off_white.png);
         background-attachment: fixed;
         width: 100%;
+        overflow: hidden;
     }
     #logo_high {
         display: block;
+        margin-left: auto;
+        margin-right: auto;
         padding-top: 15px;
         padding-left: 25px;
+        width: 90%;
     }
     #logo {
         width: 330px;
@@ -118,8 +122,8 @@
     }
     #imersao #celular_verde {
         display: flex;
-        justify-content: flex-end;
-        margin-left: 30%;
+        margin-left: auto;
+        margin-right: auto;
         width: 300px;
     }
     #landing {
@@ -219,10 +223,13 @@
     }
     #equipe {
         display: block;
+        background-image: url(medias/img/hihihihihih.png);
         background-color: var(--cor3);
+        background-attachment: fixed;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 30px;
+        overflow: hidden;
     }
     #equipe h1 {
         background-color: var(--cor1);
@@ -258,14 +265,21 @@
         border-radius: 50px;
         box-shadow: 2px 5px 5px var(--cor2);
     }
+    footer div {
+        overflow: hidden;
+    }
     footer {
         background-color: var(--cor2);
         color: var(--cor1);
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         padding: 5px;
         text-align: center;
+        width: 99%;
     }
 }
+
+
+/* Ajustes para telas menores que 768px de largura */
 
 
 /* Ajustes para telas menores que 768px de largura */
