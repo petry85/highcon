@@ -30,7 +30,7 @@
         align-items: center;
     }
     main {
-        width: 100vw;
+        width: 100%;
         overflow: hidden;
     }
     #highcon {
@@ -321,7 +321,6 @@
         padding: 5px;
         text-align: center;
         overflow: hidden;
-        width: fit-content;
     }
     footer div {
         overflow: hidden;
@@ -330,7 +329,6 @@
         background-color: var(--cor2);
         color: var(--cor1);
         font-size: 1.5em;
-        width: 99vw;
     }
 }
 
