@@ -105,7 +105,7 @@
         color: var(--cor1);
     }
     #converter .paragrafo h1 {
-        font-size: 5rem;
+        font-size: 4rem;
         text-align: right;
         margin-top: 30%;
         margin-left: 150px;
@@ -115,11 +115,12 @@
     }
     #converter .paragrafo p {
         font-size: 3em;
-        margin-left: 150px;
+        margin-left: 280px;
         margin-right: 50px;
         margin-top: 5%;
         text-align: right;
         transition: all 3s linear;
+        width: 450px;
     }
     #converter #note_aberto {
         margin-top: 70%;
@@ -130,10 +131,11 @@
     #imersao .paragrafo {
         display: block;
         font-size: 2em;
-        margin: 15% 3% 0 0;
+        margin: 150px 3% 0 150px;
         position: relative;
         float: right;
         text-align: right;
+        width: 550px
     }
     #imersao .imagens {
         margin-top: 15%;
@@ -196,10 +198,10 @@
         color: white;
         overflow: hidden;
         float: right;
-        margin-left: 50px;
+        margin-left: 250px;
         margin-right: 20px;
-        width: 450px;
-        height: 500px;
+        width: 500px;
+        height: 550px;
     }
     #hr_landing {
         width: 100%;
@@ -217,8 +219,10 @@
         font-size: 2em;
     }
     #landing .paragrafo p {
-        font-size: 1.5em;
-        padding: 5px;
+        font-size: 1.8em;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
         text-align: center;
         margin-top: 15px;
         margin-left: auto;
@@ -228,9 +232,9 @@
         display: flex;
         position: relative;
         float: left;
-        margin-top: -30px;
-        width: 500px;
-        height: 550px;
+        margin-top: -20px;
+        width: 600px;
+        height: 650px;
         margin-right: auto;
     }
     #landing .destaque_verde {
@@ -259,7 +263,6 @@
         width: 50%;
         width: 550px;
         margin-top: -554px;
-        margin-left: -10%;
         height: 100vh;
     }
     #gestao .paragrafo {
@@ -270,7 +273,7 @@
         color: white;
         margin-top: 10%;
         margin-left: 50%;
-        margin-right: 20px;
+        margin-right: 150px;
         height: 550px;
         overflow: hidden;
     }
@@ -285,18 +288,23 @@
         height: 50px;
         font-size: 2em;
     }
-    #gestao p,
-    #landing p {
-        margin: 3%;
-        font-size: 1.5rem;
+    #gestao p {
+        margin: 15px;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
     }
     #gestao .paragrafo {
         background-color: var(--cor4);
         text-align: center;
+        text-wrap: wrap;
     }
     .destaque {
         display: block;
         align-items: center;
+        transition: all 5s ease;
     }
     #gestao .destaque_verde {
         display: block;
