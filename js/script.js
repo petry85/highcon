@@ -1,36 +1,3 @@
-//const myObserver = new IntersectionObserver((entries) => {
-//    entries.forEach((entry) => {
-//        if (entry.isIntersecting) {
-//            entry.target.classList.add('show')
-//        } else {
-//            entry.target.classList.remove('show')
-//        }
-//    })
-//})
-
-//const elements = document.querySelectorAll('.hidden') //procura todas as classes hidden
-
-//elements.forEach((element) => myObserver.observe(element))
-
-function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-function checkElementsVisibility() {
-    var elements = document.querySelectorAll('#imersao .paragrafo h1, #converter .paragrafo h1');
-    elements.forEach(function(element) {
-        if (isElementInViewport(element)) {
-            element.classList.add('on-screen');
-        }
-    });
-}
-
 document.addEventListener('DOMContentLoaded', function() {
     checkElementsVisibility();
     window.addEventListener('scroll', checkElementsVisibility);

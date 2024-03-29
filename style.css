@@ -1,387 +1,389 @@
-    @charset "UTF-8";
-    @media screen and (min-width:769px) {
-        @font-face {
-            font-family: 'Pretendard';
-            src: url('../fonts/pretendard/public/static/Pretendard-Regular.otf');
-        }
-        * {
-            padding: 0px;
-            margin: 0px;
-            font-size: 1em;
-            font-family: var(--font3);
-        }
-         :root {
-            --cor1: #cac9c7;
-            --cor1t: #cac9c776;
-            --cor2: #333436;
-            --cor2t: #3334367c;
-            --cor3: #61ac29;
-            --cor4: #A9ABAA;
-            --font1: "Roboto", sans-serif;
-            --font2: "Open Sans", sans-serif;
-            --font3: "Pretendard", "Roboto", sans-serif;
-        }
-        body,
-        html {
-            display: block;
-            background-color: var(--cor1);
-            font-family: var(--font3);
-            margin: auto;
-        }
-        main {
-            display: block;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            box-shadow: 0 2px 5px 5px var(--cor2t);
-            overflow: hidden;
-        }
-        .container {
-            display: flex;
-            flex-direction: row;
-            height: 100vh;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .paragrafo,
-        .imagens {
-            display: flex;
-            width: 50%;
-        }
-        #highcon {
-            background-image: url('../medias/img/fundo_off_white.png');
-            flex-wrap: wrap;
-            position: relative;
-            background-attachment: fixed;
-            background-size: cover;
-            overflow: hidden;
-            width: 100%;
-        }
-        #highcon #logo_high {
-            display: block;
-            margin: 10% auto 0 10%;
-            scale: 1.2;
-            transition-duration: 0.8s;
-            transform-origin: 0% 0%;
-        }
-        #logo_high:hover {
-            transform: scale(1.5);
-            transition-duration: 0.8s;
-        }
-        #highcon p {
-            margin-left: 22%;
-            font-size: 2em;
-        }
-        #logo {
-            width: 400px;
-        }
-        #highcon .imagens img {
-            display: block;
-            position: relative;
-            margin-top: -20%;
-            margin-left: auto;
-            margin-right: auto;
-            float: right;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
-        #highcon span {
-            font-size: 2rem;
-            padding: 2px;
-            margin-top: 2px;
-        }
-        @keyframes square-in-hesitate {
-            0% {
-                clip-path: inset(100% 100% 100% 100%);
-            }
-            40% {
-                clip-path: inset(33% 33% 33% 33%);
-            }
-            100% {
-                clip-path: inset(0 0 0 0);
-            }
-        }
-        [transition-style="in:square:hesitate"] {
-            animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-hesitate both;
-        }
-        #highcon span {
-            background-color: var(--cor3);
-            border-radius: 0 5px 0 5px;
-            animation: square-in-hesitate 3s;
-        }
-        #converter .imagens,
-        #imersao .imagens {
-            margin-top: 15%;
-            width: 40vw;
-        }
-        #converter .imagens img {
-            width: 30vw;
-            height: 40vh;
-        }
-        #converter .paragrafo p {
-            font-size: 1.5em;
-        }
-        #converter .paragrafo,
-        #imersao .paragrafo {
-            margin-top: 15%;
-            position: relative;
-            float: right;
-            text-align: right;
-        }
-        #converter .paragrafo,
-        #imersao .paragrafo {
-            display: block;
-            margin: 15% 3% 0 0;
-            position: relative;
-            float: right;
-            text-align: right;
-        }
-        #imersao .paragrafo h1 {
-            font-size: 3rem;
-            margin-left: 5px;
-            color: var(--cor3);
-            transition: all 3s linear;
-        }
-        #converter .paragrafo h1 {
-            font-size: 3rem;
-            color: var(--cor3);
-            transition: all 3s linear;
-        }
-        .hidden {
-            opacity: 0;
-            font-size: 1rem;
-            filter: blur(15px);
-            transition: all 2s;
-        }
-        /* Adicione esta classe ao elemento quando estiver visível */
-        #converter .paragrafo p,
-        #imersao .paragrafo p {
-            margin-top: 5%;
-            transition: all 3s linear;
-        }
-        .bold_verde {
-            font-size: 1.2rem;
-            color: var(--cor3);
-            font-weight: bolder;
-        }
-        #converter {
-            display: flex;
-            background-image: url('../medias/img/hihihihihih.png');
-            background-color: var(--cor2);
-            position: relative;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: right;
-            width: 100%;
-            color: var(--cor1);
-        }
-        #imersao {
-            display: flex;
-            background-image: url('../medias/img/hihihihihih.png');
-            background-color: var(--cor2);
-            position: relative;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: right;
-            width: 100%;
-            color: var(--cor1);
-        }
-        #imersao .imagens img {
-            margin-top: -15%;
-            padding: 0;
-            width: 30vw;
-            height: 70vh;
-        }
-        #landing {
-            display: flex;
-            background-image: url('../medias/img/hihihihihih.png');
-            background-color: var(--cor2);
-            position: relative;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: right;
-            width: 100%;
-        }
-        #landing .paragrafo {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            border: 2px solid #62ac2986;
-            border-radius: 25px;
-            color: white;
-            overflow: hidden;
-            float: right;
-            margin-left: auto;
-            margin-right: -45%;
-            height: 480px;
-        }
-        #landing .paragrafo p {
-            font-size: 1.3em;
-            padding: 10px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        #not_landing {
-            display: flex;
-            position: relative;
-            float: left;
-            margin-top: -30px;
-            width: 400px;
-            height: 550px;
-            margin-left: -100%;
-            margin-right: auto;
-        }
-        #gestao {
-            display: block;
-            flex-direction: row;
-            background-image: url('../medias/img/hihihihihih.png');
-            background-color: var(--cor1);
-            position: relative;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: right;
-        }
-        #gestao .imagens img {
-            display: block;
-            width: 50%;
-            width: 550px;
-            margin-top: -83.8%;
-            margin-left: -10%;
-            height: 100vh;
-        }
-        #gestao .paragrafo {
-            display: flex;
-            flex-direction: column;
-            border: 2px solid #62ac2986;
-            border-radius: 25px;
-            color: white;
-            margin-left: 50%;
-            height: 450px;
-        }
-        #gestao h1 {
-            background-color: var(--cor3);
-            border-radius: 23px 23px 0 0;
-            margin: 0px;
-            padding: 10px 20px;
-            overflow: hidden;
-            width: 95%;
-            font-size: 1.4em;
-            height: 30px;
-        }
-        #landing h1 {
-            background-color: var(--cor3);
-            border-radius: 23px 23px 0 0;
-            margin: 0px;
-            padding: 10px 20px;
-            overflow: hidden;
-            width: 95%;
-            font-size: 1.4em;
-        }
-        #gestao p,
-        #landing p {
-            margin: 3%;
-            font-size: 1.5rem;
-        }
-        #gestao .paragrafo {
-            background-color: var(--cor4);
-        }
-        .destaque {
-            display: flex;
-            margin-left: 20px;
-        }
-        .destaque_verde {
-            background-color: #61ac29;
-            border-radius: 20px;
-            padding: 10px;
-            width: 70%;
-            text-align: center;
-        }
-        #equipe {
-            display: block;
-            background-image: url(medias/img/hihihihihih.png);
-            background-color: var(--cor3);
-            background-attachment: fixed;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 30px;
-            overflow: hidden;
-            height: 100%;
-        }
-        .hr_equipe {
-            height: 3px;
-            width: 100%;
-        }
-        #equipe h1 {
-            display: block;
-            width: 100%;
-            height: 30px;
-            background-color: var(--cor1);
-            color: var(--cor3);
-            font-size: 2.5em;
-            text-align: center;
-            justify-content: center;
-            box-shadow: 0px 5px 5px var(--cor1t);
-            font-size: 2.5em;
-            text-align: center;
-            padding-top: 20px;
-            padding-bottom: 30px;
-            box-shadow: 0px 5px 5px 5px var(--cor1t);
-        }
-        #equipe p {
-            display: block;
-            background-color: var(--cor1t);
-            text-align: justify;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 15px;
-            width: 550px;
-            font-size: 1.5em;
-            border: 1px solid var(--cor1);
-            border-radius: 15px;
-            box-shadow: 2px 3px 3px var(--cor2t);
-        }
-        .perfil img {
-            display: block;
-            margin: 30px auto 30px auto;
-            width: 200px;
-            height: 200px;
-            border-radius: 50px;
-            box-shadow: 2px 5px 5px var(--cor2);
-        }
-        #contato {
-            display: flex;
-            flex-direction: column;
-            background-color: var(--cor1);
-            overflow: hidden;
-        }
-        #contato h1 {
-            display: block;
-            font-size: 1.5em;
-            text-align: center;
-            margin-top: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            background-color: var(--cor3);
-            border-radius: 25px;
-            width: 300px;
-        }
-        #contato a {
-            text-decoration: none;
-            padding: 20px 0 20px 0;
-        }
-        /*icone mesangem*/
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            font-size: 50px;
-        }
-        /* #whats_icone {
+@charset "UTF-8";
+@media screen and (min-width:769px) {
+    @font-face {
+        font-family: 'Pretendard';
+        src: url('../fonts/pretendard/public/static/Pretendard-Regular.otf');
+    }
+    * {
+        padding: 0px;
+        margin: 0px;
+        font-size: 1em;
+        font-family: var(--font3);
+    }
+     :root {
+        --cor1: #cac9c7;
+        --cor1t: #cac9c776;
+        --cor2: #333436;
+        --cor2t: #3334367c;
+        --cor3: #61ac29;
+        --cor4: #A9ABAA;
+        --font1: "Roboto", sans-serif;
+        --font2: "Open Sans", sans-serif;
+        --font3: "Pretendard", "Roboto", sans-serif;
+    }
+    body,
+    html {
+        display: block;
+        background-color: var(--cor1);
+        font-family: var(--font3);
+        margin: auto;
+    }
+    main {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 2px 5px 5px var(--cor2t);
+        overflow: hidden;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #highcon {
+        display: block;
+        margin-top: 0;
+        background-image: url('../medias/img/fundo_off_white.png');
+        flex-wrap: wrap;
+    }
+    #highcon #logo_high {
+        display: block;
+        margin: 0 auto 0 10%;
+        padding: 50px;
+        scale: 1.2;
+        transition-duration: 0.8s;
+        transform-origin: 0% 0%;
+    }
+    #highcon .imagens {
+        display: block;
+        margin-left: 50%;
+    }
+    #logo_high:hover {
+        transform: scale(1.5);
+        transition-duration: 0.8s;
+    }
+    #highcon .paragrafo {
+        display: block;
+        margin-left: 17%;
+        font-size: 3em;
+    }
+    #logo {
+        width: 550px;
+    }
+    #highcon .imagens img {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: right;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    #highcon span {
+        font-size: 5rem;
+        padding: 2px;
+        margin-top: 2px;
+        background-color: var(--cor3);
+        border-radius: 0 5px 0 5px;
+        animation: square-in-hesitate 3s;
+    }
+    #converter {
+        display: flex;
+        background-image: url('../medias/img/hihihihihih.png');
+        background-color: var(--cor2);
+        position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        width: 100%;
+        color: var(--cor1);
+    }
+    #converter .paragrafo h1 {
+        font-size: 5rem;
+        text-align: right;
+        margin-top: 40%;
+        margin-left: 150px;
+        margin-right: 50px;
+        color: var(--cor3);
+        transition: all 3s linear;
+    }
+    #converter .paragrafo p {
+        font-size: 3em;
+        margin-left: 150px;
+        margin-right: 50px;
+        margin-top: 5%;
+        text-align: right;
+        transition: all 3s linear;
+    }
+    #converter #note_aberto {
+        margin-top: 70%;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 450px;
+    }
+    #imersao .paragrafo {
+        display: block;
+        font-size: 2em;
+        margin: 15% 3% 0 0;
+        position: relative;
+        float: right;
+        text-align: right;
+    }
+    #imersao .imagens {
+        margin-top: 15%;
+        margin-right: 20px;
+        width: 35vw;
+        height: 450px;
+    }
+    #imersao .paragrafo h1 {
+        font-size: 3rem;
+        margin-left: 5px;
+        color: var(--cor3);
+        transition: all 3s linear;
+    }
+    #imersao .paragrafo p {
+        margin-top: 5%;
+        transition: all 3s linear;
+    }
+    .bold_verde {
+        font-size: 2.5rem;
+        color: var(--cor3);
+        font-weight: bolder;
+    }
+    #imersao {
+        display: flex;
+        background-image: url('../medias/img/hihihihihih.png');
+        background-color: var(--cor2);
+        position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        width: 100%;
+        color: var(--cor1);
+    }
+    #imersao .imagens img {
+        margin-top: -15%;
+        padding: 0;
+        width: 30vw;
+        height: 70vh;
+    }
+    #landing {
+        display: flex;
+        background-image: url('../medias/img/hihihihihih.png');
+        background-color: var(--cor2);
+        position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        padding-top: 20%;
+        width: 100%;
+    }
+    #landing .paragrafo {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border: 2px solid #62ac2986;
+        border-radius: 25px;
+        color: white;
+        overflow: hidden;
+        float: right;
+        margin-left: 50px;
+        margin-right: 20px;
+        width: 450px;
+        height: 500px;
+    }
+    #hr_landing {
+        width: 100%;
+        height: 1px;
+    }
+    #landing h1 {
+        background-color: var(--cor3);
+        border-radius: 23px 23px 0 0;
+        margin: 0px;
+        padding: 15px 20px;
+        text-align: center;
+        overflow: hidden;
+        width: 95%;
+        height: 50px;
+        font-size: 2em;
+    }
+    #landing .paragrafo p {
+        font-size: 1.5em;
+        padding: 5px;
+        text-align: center;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #not_landing {
+        display: flex;
+        position: relative;
+        float: left;
+        margin-top: -30px;
+        width: 500px;
+        height: 550px;
+        margin-right: auto;
+    }
+    #gestao {
+        display: block;
+        flex-direction: row;
+        background-image: url('../medias/img/hihihihihih.png');
+        background-color: var(--cor1);
+        position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+    }
+    #gestao .imagens img {
+        display: block;
+        width: 50%;
+        width: 550px;
+        margin-top: -554px;
+        margin-left: -10%;
+        height: 100vh;
+    }
+    #gestao .paragrafo {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #62ac2986;
+        border-radius: 25px;
+        color: white;
+        margin-top: 10%;
+        margin-left: 50%;
+        margin-right: 20px;
+        height: 550px;
+        overflow: hidden;
+    }
+    #gestao h1 {
+        background-color: var(--cor3);
+        border-radius: 23px 23px 0 0;
+        padding: 15px 20px;
+        margin-right: 20px;
+        text-align: center;
+        overflow: hidden;
+        width: 95%;
+        height: 50px;
+        font-size: 2em;
+    }
+    #gestao p,
+    #landing p {
+        margin: 3%;
+        font-size: 1.5rem;
+    }
+    #gestao .paragrafo {
+        background-color: var(--cor4);
+        text-align: center;
+    }
+    .destaque {
+        display: block;
+        align-items: center;
+    }
+    .destaque_verde {
+        display: block;
+        align-items: center;
+        background-color: #61ac29;
+        border-radius: 20px;
+        padding: 10px;
+        width: 450px;
+        padding-left: 20px;
+        text-align: center;
+    }
+    #equipe {
+        display: block;
+        background-image: url(medias/img/hihihihihih.png);
+        background-color: var(--cor3);
+        background-attachment: fixed;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+        overflow: hidden;
+        height: 100%;
+    }
+    .hr_equipe {
+        height: 3px;
+        width: 100%;
+    }
+    #equipe h1 {
+        display: block;
+        width: 100%;
+        height: 30px;
+        background-color: var(--cor1);
+        color: var(--cor3);
+        font-size: 2.5em;
+        text-align: center;
+        justify-content: center;
+        box-shadow: 0px 5px 5px var(--cor1t);
+        font-size: 2.5em;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        box-shadow: 0px 5px 5px 5px var(--cor1t);
+    }
+    #equipe p {
+        display: block;
+        background-color: var(--cor1t);
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+        width: 550px;
+        font-size: 1.5em;
+        border: 1px solid var(--cor1);
+        border-radius: 15px;
+        box-shadow: 2px 3px 3px var(--cor2t);
+    }
+    .hr_equipe1 {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 1px;
+        width: 80%;
+    }
+    .perfil img {
+        display: block;
+        margin: 30px auto 30px auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 50px;
+        box-shadow: 2px 5px 5px var(--cor2);
+    }
+    #contato {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--cor1);
+        overflow: hidden;
+    }
+    #contato h1 {
+        display: block;
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: var(--cor3);
+        border-radius: 25px;
+        width: 300px;
+    }
+    #contato a {
+        text-decoration: none;
+        padding: 20px 0 20px 0;
+    }
+    /*icone mesangem*/
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        font-size: 50px;
+    }
+    /* #whats_icone {
         display: block;
         background-color: var(--cor3t);
         color: var(--cor2);
@@ -395,15 +397,15 @@
         width: 75px;
         height: 75px;
     }*/
-        #whats_a img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            align-items: center;
-            width: 90px;
-            height: 90px;
-        }
-        /*#icone_email {
+    #whats_a img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        width: 90px;
+        height: 90px;
+    }
+    /*#icone_email {
         display: block;
         color: var(--cor2);
         font-size: 75px;
@@ -411,20 +413,20 @@
         margin-right: auto;
         width: fit-content;
     }*/
-        footer {
-            background-color: var(--cor2);
-            color: var(--cor1);
-            font-size: 1.8em;
-            padding: 5px;
-            text-align: center;
-            overflow: hidden;
-        }
-        footer div {
-            overflow: hidden;
-        }
-        footer p {
-            background-color: var(--cor2);
-            color: var(--cor1);
-            font-size: 1em;
-        }
+    footer {
+        background-color: var(--cor2);
+        color: var(--cor1);
+        font-size: 1.8em;
+        padding: 5px;
+        text-align: center;
+        overflow: hidden;
     }
+    footer div {
+        overflow: hidden;
+    }
+    footer p {
+        background-color: var(--cor2);
+        color: var(--cor1);
+        font-size: 1em;
+    }
+}
