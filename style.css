@@ -52,22 +52,24 @@
     }
     #highcon #logo_high {
         display: block;
-        margin: 0 auto 0 10%;
-        padding: 50px;
+        flex-direction: row;
+        margin-left: 16%;
+        margin-right: auto;
+        padding-top: 50px;
         scale: 1.2;
         transition-duration: 0.8s;
         transform-origin: 0% 0%;
+        overflow: hidden;
+        width: fit-content;
     }
     #highcon .imagens {
+        margin-top: -300px;
         display: block;
         margin-left: 50%;
     }
-    #logo_high:hover {
-        transform: scale(1.2);
-        transition-duration: 0.8s;
-    }
     #highcon .paragrafo {
         display: block;
+        padding-top: 40px;
         margin-left: 17%;
         font-size: 3em;
     }
@@ -124,7 +126,7 @@
         width: 450px;
     }
     #converter #note_aberto {
-        margin-top: 70%;
+        margin-top: 52%;
         margin-left: 20px;
         margin-right: 20px;
         width: 450px;
@@ -145,7 +147,7 @@
         height: 450px;
     }
     #imersao .paragrafo h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         margin-left: 5px;
         color: var(--cor3);
         transition: all 3s linear;
@@ -362,7 +364,7 @@
         box-shadow: 2px 3px 3px var(--cor2t);
     }
     .hr_equipe1 {
-        margin-top: 20px;
+        margin-top: 40px;
         margin-left: auto;
         margin-right: auto;
         height: 1px;
@@ -371,8 +373,8 @@
     .perfil img {
         display: block;
         margin: 30px auto 30px auto;
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         border-radius: 50px;
         box-shadow: 2px 5px 5px var(--cor2);
     }

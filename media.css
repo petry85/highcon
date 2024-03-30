@@ -63,7 +63,12 @@
         border-radius: 15px;
     }
     #highcon #man_notebook {
-        height: 400px;
+        display: block;
+        margin-top: -80px;
+        width: 300px;
+        height: 350px;
+        margin-left: auto;
+        margin-right: 20px;
     }
     #converter {
         display: block;
@@ -260,6 +265,13 @@
         border-radius: 15px;
         box-shadow: 2px 3px 3px var(--cor2t);
     }
+    .hr_equipe1 {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 1px;
+        width: 80%;
+    }
     .perfil img {
         display: block;
         margin: 30px auto 30px auto;
@@ -310,7 +322,7 @@
         width: 75px;
         height: 75px;
     }*/
-    #whats_a {
+    #whats_a img {
         display: block;
         margin-left: auto;
         margin-right: auto;
