@@ -37,64 +37,54 @@
         box-shadow: 0 2px 5px 5px var(--cor2t);
         overflow: hidden;
     }
-    .container {
-        display: flex;
-        flex-direction: row;
-        height: 100vh;
+    /* --- CONFIGURAÇÕES GERAIS ---*/
+    .imagens {
+        display: block;
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: auto;
         margin-left: auto;
-        margin-right: auto;
     }
+    .bold_verde {
+        font-size: 1.1em;
+        color: var(--cor3);
+        font-weight: bolder;
+    }
+    /* --- PRIMEIRA LAMINA ---*/
     #highcon {
-        display: block;
-        margin-top: 0;
         background-image: url('../medias/img/fundo_off_white.png');
-        background-size: cover;
-        flex-wrap: wrap;
-    }
-    #highcon #logo_high {
-        display: block;
-        flex-direction: row;
-        margin-left: 16%;
-        margin-right: auto;
-        padding-top: 50px;
-        scale: 1.2;
-        transition-duration: 0.8s;
-        transform-origin: 0% 0%;
-        overflow: hidden;
-        width: fit-content;
-    }
-    #highcon .imagens {
-        margin-top: -300px;
-        display: block;
-        margin-left: 50%;
-    }
-    #highcon .paragrafo {
-        display: block;
-        padding-top: 40px;
-        margin-left: 17%;
-        font-size: 3em;
+        background-size: contain;
+        margin: 0px;
+        height: 100vh;
     }
     #logo {
-        width: 550px;
+        margin: 50px 0px 0px 200px;
+        font-size: 4em;
+        width: 950px;
     }
-    #highcon .imagens img {
+    #man_notebook {
         display: block;
         position: relative;
-        margin-left: auto;
-        margin-right: auto;
         float: right;
-        width: 100%;
-        height: 100%;
+        margin-top: -150px;
+        height: 750px;
         z-index: 1;
+    }
+    #highcon .paragrafo {
+        margin: 50px 0px 0px 200px;
+    }
+    #highcon .paragrafo p {
+        font-size: 5em;
+        margin: 50px 0px 0px 0px;
     }
     #highcon span {
         font-size: 5rem;
         padding: 2px;
         margin-top: 2px;
         background-color: var(--cor3);
-        border-radius: 0 5px 0 5px;
-        animation: square-in-hesitate 3s;
+        border-radius: 0 25px 0 25px;
     }
+    /* --- SEGUNDA LAMINA ---*/
     #converter {
         display: flex;
         background-image: url('../medias/img/hihihihihih.png');
@@ -108,63 +98,40 @@
         height: 100vh;
         color: var(--cor1);
     }
+    #converter .paragrafo {
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        min-width: 450px;
+        max-width: 80%;
+        text-align: justify;
+    }
+    #converter .paragrafo p {
+        display: block;
+        font-size: 3em;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 100px;
+        padding-top: 20px;
+        min-width: 450px;
+        max-width: 80%;
+        text-align: right;
+    }
     #converter .paragrafo h1 {
         display: block;
         text-align: right;
         justify-content: center;
+        padding-right: 120px;
         font-size: 4rem;
-        margin-top: 30%;
-        margin-right: 315px;
         color: var(--cor3);
-        transition: all 3s linear;
     }
-    #converter .paragrafo p {
-        font-size: 3em;
-        margin-left: 280px;
-        margin-right: 50px;
-        margin-top: 5%;
-        text-align: right;
-        transition: all 3s linear;
-        width: 50%;
-    }
-    #converter #note_aberto {
-        margin-top: 52%;
-        margin-left: auto;
-        margin-right: 150px;
-    }
-    .imagens #note_aberto {
-        width: 500px;
-        height: 500px;
-    }
-    #imersao .paragrafo {
+    #note_aberto {
         display: block;
-        font-size: 2em;
-        margin: 250px 3% 0 250px;
-        position: relative;
-        float: right;
-        text-align: right;
-        width: 550px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-right: 70px;
     }
-    #imersao .imagens {
-        margin-top: 15%;
-        width: 450px;
-        height: 450px;
-    }
-    #imersao .paragrafo h1 {
-        font-size: 4rem;
-        margin-left: 5px;
-        color: var(--cor3);
-        transition: all 3s linear;
-    }
-    #imersao .paragrafo p {
-        margin-top: 5%;
-        transition: all 3s linear;
-    }
-    .bold_verde {
-        font-size: 3rem;
-        color: var(--cor3);
-        font-weight: bolder;
-    }
+    /* --- TERCEIRA LAMINA ---*/
     #imersao {
         display: flex;
         background-image: url('../medias/img/hihihihihih.png');
@@ -178,13 +145,44 @@
         height: 100vh;
         color: var(--cor1);
     }
-    #imersao .imagens img {
-        margin-top: -15%;
-        padding: 0;
-        width: 30vw;
-        height: 70vh;
+    #imersao .paragrafo h1 {
+        display: block;
+        text-align: right;
+        justify-content: center;
+        padding-right: 125px;
+        font-size: 4rem;
+        color: var(--cor3);
     }
+    #imersao .paragrafo {
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        min-width: 450px;
+        max-width: 80%;
+        text-align: justify;
+    }
+    #imersao .paragrafo p {
+        display: block;
+        font-size: 3em;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 100px;
+        padding-top: 20px;
+        min-width: 450px;
+        max-width: 80%;
+        text-align: right;
+    }
+    #celular_verde {
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-right: 70px;
+    }
+    /* --- QUARTA LAMINA ---*/
     #landing {
+        display: none;
+    }
+    #landing_desktop {
         display: flex;
         background-image: url('../medias/img/hihihihihih.png');
         background-color: var(--cor2);
@@ -193,68 +191,66 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: right;
-        padding-top: 20%;
+        padding-top: 150px;
         width: 100%;
-    }
-    #landing .paragrafo {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        border: 2px solid #62ac2986;
-        border-radius: 25px;
-        color: white;
-        overflow: hidden;
-        float: right;
-        margin-left: 350px;
-        margin-right: 20px;
-        width: 550px;
-        height: 600px;
+        height: 100vh;
     }
     #hr_landing {
         width: 100%;
         height: 1px;
     }
-    #landing h1 {
+    #landing_desktop h1 {
         background-color: var(--cor3);
         border-radius: 23px 23px 0 0;
-        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 15px 20px;
         text-align: center;
         overflow: hidden;
-        width: 95%;
+        width: 100%;
         height: 50px;
-        font-size: 2em;
+        font-size: 3em;
     }
-    #landing .paragrafo p {
-        font-size: 1.8em;
-        padding-top: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: center;
-        margin-top: 15px;
+    #landing_desktop .paragrafo {
+        display: block;
         margin-left: auto;
         margin-right: auto;
+        width: 45%;
+        text-align: justify;
+        color: var(--cor1);
+        border: 1px solid var(--cor1);
+        border-radius: 23px;
+        overflow: hidden;
+        height: 75%;
+        box-shadow: 3px 2px 10px var(--cor1);
     }
-    #not_landing {
-        display: flex;
-        position: relative;
-        float: left;
-        margin-top: -20px;
-        width: 600px;
-        height: 650px;
-        margin-left: 150px;
-        margin-right: 250px;
+    #landing_desktop .paragrafo p {
+        display: block;
+        font-size: 3em;
+        margin-left: 100px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        max-width: 80%;
+        text-align: justify;
     }
-    #landing .destaque_verde {
+    #landing_desktop .destaque_verde {
         display: block;
         align-items: center;
         background-color: #61ac29;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
         border-radius: 20px;
-        padding: 10px;
-        width: 400px;
-        padding-left: 20px;
         text-align: center;
     }
+    #landing_desktop #not_landing {
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-right: 70px;
+        height: 750px;
+    }
+    /* --- QUINTA LAMINA ---*/
     #gestao {
         display: block;
         flex-direction: row;
@@ -265,13 +261,29 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: right;
+        height: 100vh;
+        margin-top: auto;
+        margin-bottom: auto;
+        justify-content: center;
     }
     #gestao .imagens img {
         display: block;
+        margin-top: -378px;
         width: 50%;
-        width: 550px;
-        margin-top: -554px;
-        height: 100vh;
+        width: 650px;
+        height: 950px;
+    }
+    #gestao h1 {
+        background-color: var(--cor3);
+        border-radius: 23px 23px 0 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px 20px;
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+        height: 50px;
+        font-size: 3em;
     }
     #gestao .paragrafo {
         display: flex;
@@ -279,51 +291,35 @@
         border: 2px solid #62ac2986;
         border-radius: 25px;
         color: white;
-        margin-top: 10%;
+        margin-top: 250px;
         margin-left: 50%;
         margin-right: 150px;
         height: 550px;
         overflow: hidden;
+        text-align: justify;
+        box-shadow: 3px 2px 10px var(--cor3);
     }
-    #gestao h1 {
-        background-color: var(--cor3);
-        border-radius: 23px 23px 0 0;
-        padding: 15px 20px;
-        margin-right: 20px;
-        text-align: center;
-        overflow: hidden;
-        width: 95%;
-        height: 50px;
+    #gestao .paragrafo p {
+        display: block;
         font-size: 2em;
-    }
-    #gestao p {
-        margin: 15px;
-        font-size: 1.8rem;
-        text-align: center;
         margin-left: auto;
         margin-right: auto;
-        padding: 10px;
-    }
-    #gestao .paragrafo {
-        background-color: var(--cor4);
-        text-align: center;
-        text-wrap: wrap;
-    }
-    .destaque {
-        display: block;
-        align-items: center;
-        transition: all 5s ease;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        max-width: 80%;
+        text-align: justify;
     }
     #gestao .destaque_verde {
         display: block;
         align-items: center;
         background-color: #61ac29;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
         border-radius: 20px;
-        padding: 10px;
-        width: 450px;
-        padding-left: 20px;
         text-align: center;
     }
+    /* --- SEXTA LAMINA ---*/
     #equipe {
         display: block;
         background-image: url(medias/img/hihihihihih.png);
@@ -362,8 +358,8 @@
         margin-left: auto;
         margin-right: auto;
         padding: 15px;
-        width: 550px;
-        font-size: 1.5em;
+        width: 650px;
+        font-size: 2em;
         border: 1px solid var(--cor1);
         border-radius: 15px;
         box-shadow: 2px 3px 3px var(--cor2t);
@@ -391,16 +387,16 @@
     }
     #contato h1 {
         display: block;
-        font-size: 1.5em;
+        font-size: 2em;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
         padding-top: 20px;
         padding-bottom: 20px;
         background-color: var(--cor3);
         border-radius: 25px;
-        width: 300px;
+        width: 350px;
     }
     #contato a {
         text-decoration: none;
@@ -419,6 +415,7 @@
         width: 90px;
         height: 90px;
     }
+    /* --- RODAPÉ ---*/
     footer {
         background-color: var(--cor2);
         color: var(--cor1);

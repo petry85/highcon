@@ -135,6 +135,9 @@
         margin-right: auto;
         width: 300px;
     }
+    #landing_desktop {
+        display: none;
+    }
     #landing {
         display: block;
         align-items: center;
