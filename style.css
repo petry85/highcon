@@ -60,14 +60,14 @@
     #logo {
         margin: 50px 0px 0px 200px;
         font-size: 4em;
-        width: 650px;
+        width: 950px;
     }
     #man_notebook {
         display: block;
         position: relative;
         float: right;
         margin-top: -150px;
-        height: 650px;
+        height: 750px;
         z-index: 1;
     }
     #highcon .paragrafo {
@@ -130,7 +130,6 @@
         margin-top: auto;
         margin-bottom: auto;
         padding-right: 70px;
-        width: 350px;
     }
     /* --- TERCEIRA LAMINA ---*/
     #imersao {
@@ -178,7 +177,6 @@
         margin-top: auto;
         margin-bottom: auto;
         padding-right: 70px;
-        width: 350px;
     }
     /* --- QUARTA LAMINA ---*/
     #landing {
@@ -250,7 +248,7 @@
         margin-top: auto;
         margin-bottom: auto;
         padding-right: 70px;
-        height: 550px;
+        height: 750px;
     }
     /* --- QUINTA LAMINA ---*/
     #gestao {
@@ -272,8 +270,8 @@
         display: block;
         margin-top: -378px;
         width: 50%;
-        width: 550px;
-        height: 650px;
+        width: 650px;
+        height: 950px;
     }
     #gestao h1 {
         background-color: var(--cor3);
