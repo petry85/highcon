@@ -89,7 +89,7 @@
     /* --- SEGUNDA LAMINA ---*/
     #converter {
         display: flex;
-        background-image: url('../medias/img/hihihihihih.png');
+        background-image: url(medias/img/hihihihihih.png);
         background-color: var(--cor2);
         position: relative;
         background-attachment: fixed;
@@ -136,7 +136,7 @@
     /* --- TERCEIRA LAMINA ---*/
     #imersao {
         display: flex;
-        background-image: url('../medias/img/hihihihihih.png');
+        background-image: url(medias/img/hihihihihih.png);
         background-color: var(--cor2);
         position: relative;
         background-attachment: fixed;
@@ -186,7 +186,7 @@
     }
     #landing_desktop {
         display: flex;
-        background-image: url('../medias/img/hihihihihih.png');
+        background-image: url(medias/img/hihihihihih.png);
         background-color: var(--cor2);
         position: relative;
         background-attachment: fixed;
@@ -252,7 +252,7 @@
     /* --- QUINTA LAMINA ---*/
     #gestao {
         display: block;
-        background-image: url('../medias/img/hihihihihih.png');
+        background-image: url(medias/img/hihihihihih.png);
         background-color: var(--cor1);
         position: relative;
         background-attachment: fixed;
