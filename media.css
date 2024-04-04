@@ -34,7 +34,7 @@
         overflow: hidden;
     }
     #highcon {
-        background-image: url(../medias/img/fundo_off_white.png);
+        background-image: url(medias/img/fundo_off_white.png);
         background-attachment: fixed;
         background-size: cover;
         /*alterado background-size*/
@@ -75,7 +75,7 @@
     }
     #converter {
         display: block;
-        background-image: url(../medias/img/hihihihihih.png);
+        background-image: url(medias/img/hihihihihih.png);
         background-attachment: fixed;
         background-size: cover;
         background-color: var(--cor2);
@@ -114,7 +114,7 @@
     #imersao {
         display: block;
         align-items: center;
-        background-image: url(../medias/img/hihihihihih.png);
+        background-image: url(medias/img/hihihihihih.png);
         background-attachment: fixed;
         background-size: cover;
         background-color: var(--cor2);
@@ -146,7 +146,7 @@
     #landing {
         display: block;
         align-items: center;
-        background-image: url(../medias/img/hihihihihih.png);
+        background-image: url(medias/img/hihihihihih.png);
         background-attachment: fixed;
         background-size: cover;
         background-color: var(--cor1);
@@ -196,7 +196,7 @@
     #gestao {
         display: block;
         align-items: center;
-        background-image: url(../medias/img/hihihihihih.png);
+        background-image: url(medias/img/hihihihihih.png);
         background-attachment: fixed;
         background-size: cover;
         background-color: var(--cor2);

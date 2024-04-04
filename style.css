@@ -53,7 +53,7 @@
     }
     /* --- PRIMEIRA LAMINA ---*/
     #highcon {
-        background-image: url('../medias/img/fundo_off_white.png');
+        background-image: url(medias/img/fundo_off_white.png);
         background-size: cover;
         margin: 0px;
         height: 100vh;
