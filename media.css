@@ -77,7 +77,7 @@
         display: block;
         background-image: url(medias/img/hihihihihih.png);
         background-attachment: fixed;
-        background-size: cover;
+        background-size: contain;
         background-color: var(--cor2);
         width: 100%;
     }
@@ -116,7 +116,7 @@
         align-items: center;
         background-image: url(medias/img/hihihihihih.png);
         background-attachment: fixed;
-        background-size: cover;
+        background-size: contain;
         background-color: var(--cor2);
     }
     #imersao h1 {
@@ -148,7 +148,7 @@
         align-items: center;
         background-image: url(medias/img/hihihihihih.png);
         background-attachment: fixed;
-        background-size: cover;
+        background-size: contain;
         background-color: var(--cor1);
     }
     #landing h1 {
@@ -198,7 +198,7 @@
         align-items: center;
         background-image: url(medias/img/hihihihihih.png);
         background-attachment: fixed;
-        background-size: cover;
+        background-size: contain;
         background-color: var(--cor2);
     }
     #gestao .paragrafo {
@@ -244,7 +244,7 @@
         background-image: url(medias/img/hihihihihih.png);
         background-color: var(--cor3);
         background-attachment: fixed;
-        background-size: cover;
+        background-size: contain;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 30px;
@@ -295,7 +295,7 @@
         display: flex;
         flex-direction: column;
         background-image: url(medias/img/hihihihihih.png);
-        background-size: cover;
+        background-size: contain;
         background-color: var(--cor1);
         overflow: hidden;
     }
