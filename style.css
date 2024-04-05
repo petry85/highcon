@@ -54,9 +54,8 @@
     /* --- PRIMEIRA LAMINA ---*/
     #highcon {
         background-image: url(medias/img/fundo_off_white.png);
-        background-size: cover;
         margin: 0px;
-        height: 100vh;
+        height: 95vh;
         transition: all 4s ease-in;
     }
     #logo {
