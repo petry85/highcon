@@ -72,7 +72,7 @@
         z-index: 1;
     }
     #highcon .paragrafo {
-        margin: 50px 0px 0px 200px;
+        margin: 40px 0px 0px 200px;
     }
     #highcon .paragrafo p {
         font-size: 4em;
@@ -104,7 +104,6 @@
         margin-bottom: auto;
         min-width: 450px;
         max-width: 80%;
-        text-align: justify;
     }
     #converter .paragrafo p {
         display: block;
@@ -122,7 +121,7 @@
         text-align: right;
         justify-content: center;
         padding-right: 30px;
-        font-size: 4rem;
+        font-size: 4.5em;
         color: var(--cor3);
     }
     #note_aberto {
@@ -215,7 +214,6 @@
         margin-left: auto;
         margin-right: 55px;
         height: 610px;
-        text-align: justify;
         color: var(--cor1);
         border: 1px solid var(--cor1);
         border-radius: 23px;
@@ -288,7 +286,6 @@
         width: 550px;
         height: 580px;
         overflow: hidden;
-        text-align: justify;
         box-shadow: 3px 2px 10px var(--cor3);
     }
     #gestao .paragrafo p {
@@ -299,7 +296,6 @@
         padding-top: 20px;
         padding-bottom: 30px;
         max-width: 80%;
-        text-align: justify;
     }
     #gestao .destaque_verde {
         display: block;
