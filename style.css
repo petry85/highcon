@@ -54,28 +54,29 @@
     /* --- PRIMEIRA LAMINA ---*/
     #highcon {
         background-image: url(medias/img/fundo_off_white.png);
+        background-size: cover;
         margin: 0px;
-        height: 95vh;
+        height: 100vh;
         transition: all 4s ease-in;
     }
     #logo {
         margin: 70px 0px 0px 200px;
         font-size: 3em;
-        width: 70%;
+        width: 65%;
     }
     #man_notebook {
         display: block;
         position: relative;
         float: right;
         margin-top: -120px;
-        height: 550px;
+        height: 450px;
         z-index: 1;
     }
     #highcon .paragrafo {
         margin: 40px 0px 0px 200px;
     }
     #highcon .paragrafo p {
-        font-size: 4em;
+        font-size: 3.5em;
         margin: 50px 0px 0px 0px;
     }
     #highcon span {
